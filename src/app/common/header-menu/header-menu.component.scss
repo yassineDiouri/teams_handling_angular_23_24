@@ -1,0 +1,21 @@
+.header-menu-container {
+  @apply tw-flex tw-w-full tw-bg-white tw-h-[60px] tw-rounded tw-shadow-md tw-p-1;
+
+  & .header-menu {
+    @apply tw-flex tw-items-center tw-h-full tw-p-1;
+    @apply tw-text-orange-600 tw-font-bold tw-text-2xl;
+    @apply tw-border-r-2 tw-border-r-orange-100;
+
+    &:first-child {
+      @apply tw-rounded-l;
+    }
+
+    &:last-child {
+      @apply tw-border-r-0 tw-rounded-r;
+    }
+
+    &:hover {
+      @apply tw-text-orange-400 tw-text-3xl tw-cursor-pointer;
+    }
+  }
+}
