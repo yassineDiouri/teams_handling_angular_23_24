@@ -1,0 +1,33 @@
+.teams-table {
+  @apply tw-w-full tw-table-auto tw-border-collapse;
+
+  & tbody {
+    & tr:hover {
+      @apply tw-bg-orange-100;
+    }
+  }
+
+  & tr {
+    & .teams-table-col {
+      @apply tw-h-[40px] tw-p-2;
+      @apply tw-text-center;
+      @apply tw-border-orange-300;
+    }
+
+    & th.teams-table-col {
+      @apply tw-text-orange-600 tw-text-2xl;
+      @apply tw-border-b-2;
+    }
+
+    & td.teams-table-col {
+      @apply tw-font-bold;
+      @apply tw-border-y-2;
+    }
+
+    &:last-child {
+      & td.teams-table-col {
+        @apply tw-border-b-0;
+      }
+    }
+  }
+}

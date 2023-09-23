@@ -1,0 +1,12 @@
+.teams-buttons-container {
+  @apply tw-flex tw-justify-end tw-gap-3 tw-w-full;
+
+  & .teams-button {
+    @apply tw-rounded-md tw-text-white tw-uppercase tw-font-bold tw-p-2;
+    @apply tw-bg-orange-600 tw-border-2 tw-border-orange-500;
+
+    &:hover {
+      @apply tw-bg-white tw-text-orange-600;
+    }
+  }
+}
