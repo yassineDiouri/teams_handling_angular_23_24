@@ -9,35 +9,13 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
+  <tr *ngFor="let team of (teams$ |async)">
     <td class="teams-table-col">
-      <input type="checkbox" name="deleteAll" id="1">
+      <input type="checkbox" name="deleteAll" [id]="team.name">
     </td>
-    <td class="teams-table-col">Paris Saint Germain</td>
-    <td class="teams-table-col">PSG</td>
-    <td class="teams-table-col">XXX</td>
-    <td class="teams-table-col">
-      <a>Edit | Delete</a>
-    </td>
-  </tr>
-  <tr>
-    <td class="teams-table-col">
-      <input type="checkbox" name="deleteAll" id="2">
-    </td>
-    <td class="teams-table-col">Paris Saint Germain</td>
-    <td class="teams-table-col">PSG</td>
-    <td class="teams-table-col">XXX</td>
-    <td class="teams-table-col">
-      <a>Edit | Delete</a>
-    </td>
-  </tr>
-  <tr>
-    <td class="teams-table-col">
-      <input type="checkbox" name="deleteAll" id="3">
-    </td>
-    <td class="teams-table-col">Paris Saint Germain</td>
-    <td class="teams-table-col">PSG</td>
-    <td class="teams-table-col">XXX</td>
+    <td class="teams-table-col">{{team.name}}</td>
+    <td class="teams-table-col">{{team.acronym}}</td>
+    <td class="teams-table-col">{{team.slogan}}</td>
     <td class="teams-table-col">
       <a>Edit | Delete</a>
     </td>
