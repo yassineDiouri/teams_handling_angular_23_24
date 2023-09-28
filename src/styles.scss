@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-orange {
+    @apply tw-min-w-[100px] tw-rounded-md tw-uppercase tw-font-bold tw-p-2;
+    @apply tw-bg-orange-600 tw-border-2 tw-border-orange-500 tw-text-white;
+    @apply hover:tw-bg-orange-100 hover:tw-text-orange-600;
+  }
+
+  .btn-out-orange {
+    @apply tw-min-w-[100px] tw-rounded-md tw-uppercase tw-font-bold tw-p-2;
+    @apply tw-bg-white tw-border-2 tw-border-orange-500 tw-text-orange-600;
+    @apply hover:tw-bg-orange-300 hover:tw-text-white;
+  }
+}

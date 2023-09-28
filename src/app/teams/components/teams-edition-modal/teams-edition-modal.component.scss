@@ -1,0 +1,42 @@
+.teams-edition-modal-bg-container {
+  @apply tw-absolute tw-top-0 tw-left-0 tw-w-screen tw-h-screen tw-z-10;
+  @apply tw-flex tw-justify-center tw-pt-[25vh];
+  @apply tw-bg-black tw-opacity-75;
+}
+
+.teams-edition-modal-container {
+  @apply tw-absolute tw-top-[30%] tw-left-[25%] tw-w-[50vw] tw-h-fit tw-z-20;
+  @apply tw-bg-white tw-opacity-100 tw-rounded-xl;
+
+  & .teams-edition-modal-title-container {
+    @apply tw-rounded-t-xl tw-bg-orange-600 tw-p-5 tw-pb-3;
+
+    & .teams-edition-modal-title {
+      @apply tw-text-4xl tw-tracking-wider tw-text-white tw-font-bold tw-uppercase;
+    }
+  }
+
+  & .teams-edition-modal-body-container {
+    @apply tw-flex tw-flex-col tw-gap-3 tw-px-5 tw-py-3;
+
+    & .teams-edition-modal-body-input-container {
+      @apply tw-flex tw-flex-col tw-gap-2;
+
+      & .teams-edition-modal-body-input-label {
+        @apply tw-w-fit tw-text-2xl;
+      }
+
+      & .teams-edition-modal-body-input {
+        @apply tw-h-[35px] tw-rounded tw-border tw-border-orange-300 tw-p-2;
+      }
+
+      & .teams-edition-modal-body-textarea {
+        @apply tw-rounded tw-border tw-border-orange-300 tw-p-2;
+      }
+    }
+  }
+
+  & .teams-edition-modal-buttons-container {
+    @apply tw-flex tw-justify-end tw-gap-2 tw-py-2;
+  }
+}

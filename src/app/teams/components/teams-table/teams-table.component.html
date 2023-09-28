@@ -14,7 +14,7 @@
       <input type="checkbox" name="deleteAll" [id]="team.name">
     </td>
     <td class="teams-table-col">{{team.name}}</td>
-    <td class="teams-table-col">{{team.acronym}}</td>
+    <td class="teams-table-col">{{team.acronym | uppercase}}</td>
     <td class="teams-table-col">{{team.slogan}}</td>
     <td class="teams-table-col">
       <div class="teams-table-col-actions">
